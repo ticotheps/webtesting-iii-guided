@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; // Step 1a: Import 'ReactDOM'.
 import renderer from 'react-test-renderer'; // Step 1b: Install + import this npm module as a dev dependency.
-import { render } from 'react-testing-library';
+import { render, fireEvent } from 'react-testing-library';
 import 'jest-dom/extend-expect';
 
 import App from './App';
@@ -23,7 +23,12 @@ describe('<App />', () => {
 
   describe('speak()', () => {
     it('updates the message when the speak button is clicked', () => {
+      const { getByText } = render(<App />);
 
+      const button = getByText(/speak/i);
+      fireEvent.click(button);
+
+      getByText(/not mocking me/i);
     });
   });
 
