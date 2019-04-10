@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Speaker from '../Speaker';
+import Speaker from './Speaker';
 
 class App extends Component {
   state = {
