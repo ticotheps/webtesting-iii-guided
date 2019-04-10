@@ -8,6 +8,10 @@ import App from './App';
 import Speaker from './Speaker';
 
 afterEach(cleanup);
+// afterEach(() => {
+//   cleanup();
+//   console.log(document.body.outerHTML);
+// });
 
 describe('<App />', () => {
   it('renders without crashing', () => {
