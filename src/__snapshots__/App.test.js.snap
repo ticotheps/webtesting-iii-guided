@@ -3,5 +3,16 @@
 exports[`<App /> matches snapshot 1`] = `
 <div
   className="App"
-/>
+>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Speak
+    </button>
+    <div>
+      nothing to say
+    </div>
+  </div>
+</div>
 `;

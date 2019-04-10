@@ -11,10 +11,12 @@
 
 - Edge/Corner Cases
     -Does it do the right thing when passed an invalid input?
+    -Group all similar assertions together
+        -Object/string/array/undefined? ===> is not a number
 
 ## Good Unit Tests
 
-- Independent of other tests
-- Run fast (milliseconds; not seconds)
-= Tests ONE thing, one unit of functionality
-= Don't have unnecessary assertions
+- They are independent of other tests
+- They run FAST (milliseconds; not seconds)
+= They test ONE thing/assumption (or one unit of functionality)
+    = Don't have unnecessary assertions

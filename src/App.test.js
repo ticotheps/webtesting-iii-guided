@@ -16,11 +16,11 @@ describe('<App />', () => {
   });
 
   // Step 2: Write this test.
-  it.skip('matches snapshot', () => {
-    const tree = renderer.create(<App />); // generates a DOM tree
+  it('matches snapshot', () => {
+    const tree = renderer.create(<App />).toJSON(); // generates a DOM tree
 
     // snapshots are a JSON representation of the DOM tree
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();
   });
 
   describe('speak()', () => {
