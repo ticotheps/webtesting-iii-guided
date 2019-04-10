@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; // Step 1a: Import 'ReactDOM'.
 import renderer from 'react-test-renderer'; // Step 1b: Install + import this npm module as a dev dependency.
+import { render } from 'react-testing-library';
+import 'jest-dom/extend-expect';
 
 import App from './App';
 
@@ -17,6 +19,12 @@ describe('<App />', () => {
 
     // snapshots are a JSON representation of the DOM tree
     expect(tree.toJSON()).toMatchSnapshot();
+  });
+
+  describe('speak()', () => {
+    it('updates the message when the speak button is clicked', () => {
+
+    });
   });
 
   describe('mocking', () => {
