@@ -11,3 +11,6 @@
 ## Good Unit Tests
 
 - Independent of other tests
+- Run fast (milliseconds; not seconds)
+= Tests ONE thing, one unit of functionality
+= Don't have unnecessary assertions

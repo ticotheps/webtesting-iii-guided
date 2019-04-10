@@ -1,10 +1,10 @@
 import React from 'react';
-import banana from 'react-test-renderer'; // 1: install this npm module as a dev dependency
+import banana from 'react-test-renderer'; // Step 1: Install this npm module as a dev dependency.
 
 import App from './App';
 
 describe('<App />', () => {
-  // 2. write this test
+  // Step 2: Write this test.
   it('matches snapshot', () => {
     const tree = banana.create(<App />); // generates a DOM tree
 
