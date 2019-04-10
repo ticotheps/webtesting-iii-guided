@@ -45,7 +45,8 @@ describe('<App />', () => {
       const actual = mock('smile');
       // mock('another smile');
 
-      expect(actual).toBe('hello');
+      expect(actual).toBeUndefined();
+      // expect(actual).toBe('hello');
       expect(mock).toHaveBeenCalled();
       expect(mock).toHaveBeenCalledTimes(1);
       // expect(mock).toHaveBeenCalledWith('frown'); // => fails b/c it was called with something else
